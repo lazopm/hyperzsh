@@ -86,5 +86,7 @@ function _git_time_since_commit() {
 
 
     echo "$COLOR$commit_age%{$reset_color%}"
+  elif hg log -l 1 > /dev/null 2>&1;
+    echo "$COLORmercurioal"
   fi
 }
